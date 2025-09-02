@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #111;
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            min-height: 100vh;
+            padding: 80px 20px;
+        }
+        #inicio { background: #222; color: #fff; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+        #sobre-mi { background: #f4f4f4; }
+        #portafolio { background: #ddd; }
+        #habilidades { background: #eee; }
+        #contacto { background: #ccc; }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Inicio -->
+<section id="inicio">
+    <img src="assets/logo-marquitouh.png" alt="Logo MARQUITO" width="400">
+    <p>Desarrollador de software | Pixel artist | Creador Digital</p>
+</section>
+
+<!-- Sobre mí -->
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <img src="assets/pixelfox-icon.png" alt="Icono Zorro" width="120">
+    <p>Soy un apasionado del desarrollo de software y el diseño de videojuegos en pixel art. 
+            Me gusta crear experiencias que combinan narrativa, jugabilidad y estética única.</p>
+</section>
+
+<!-- Portafolio -->
+<section id="portafolio">
+    <h2>Portafolio</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div>
+            <img src="assets/pixelfox-completo.png" alt="PixelFox Studios" width="100%">
+            <h3>PixelFox Studios</h3>
+            <p>Mi empresa de videojuegos indie, especializada en pixel art y experiencias narrativas.</p>
+            <a href="#" target="_blank">Ver más</a>
+        </div>
+    </div>
+</section>
+
+<!-- Habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>C (Programación en consola)</li>
+        <li>HTML, CSS, JavaScript (Frontend)</li>
+        <li>Pixel art y diseño 2D</li>
+        <li>GitHub & Control de versiones</li>
+    </ul>
+</section>
+
+<!-- Contactos -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 Email: <a href="mail:marcomartinezmatia200@gmail.com">marcomartinezmatia200@gmail.com</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/marquitouh" target="_blank">github.com/marquitouh</a></p>
+</section>
+
+
+        <footer>
+        <p>© 2025 - Marquitouh</p>
+    </footer>
+
+</body>
+</html>
