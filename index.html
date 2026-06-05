@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco | Software Developer & Game Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/pixelfox-icon.png">
+</head>
+<body>
+
+    <button id="theme-toggle" aria-label="Cambiar modo de color">🌙</button>
+
+    <div class="video-overlay"></div>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="assets/fondo.mp4" type="video/mp4">
+    </video>
+
+    <header data-aos="fade-down">
+        <div class="header-container">
+            <a href="#inicio" class="brand">MARQUITOUH<span>.DEV</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="assets/logo-marquitouh.png" alt="Logo Marquitouh" class="hero-logo">
+                <p class="hero-subtitle">Desarrollador de Software | Pixel Artist | Indie Game Designer</p>
+                <div class="hero-cta">
+                    <a href="#portafolio" class="btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <div class="container sobre-grid">
+                <div class="sobre-texto" data-aos="fade-right">
+                    <span class="section-badge">Biografía</span>
+                    <h2>Sobre mí</h2>
+                    <p class="intro">
+                        Mi nombre es Marco, conocido en el entorno digital como <strong>Marquitouh</strong>. Me apasiona el desarrollo de software y la creación de mundos virtuales a través del código y el arte digital. Mi enfoque está orientado al aprendizaje continuo, buscando constantemente desafiar mis límites técnicos y creativos.
+                    </p>
+                    
+                    <div class="intereses-grid">
+                        <div class="interes-item">
+                            <h3>🎮 Game Design</h3>
+                            <p>Especial interés en mecánicas narrativas profundas y videojuegos de acción/shooters.</p>
+                        </div>
+                        <div class="interes-item">
+                            <h3>🦊 Pixel Art & Cultura</h3>
+                            <p>Creador de la identidad visual PixelFox, inspirada en la estética retro y la cultura pop/anime.</p>
+                        </div>
+                        <div class="interes-item">
+                            <h3>🎵 Influencia Musical</h3>
+                            <p>La música es el motor de mi enfoque creativo (Rock alternativo, Indie, Punk Rock).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-imagen" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="assets/pixelfox-icon.png" alt="PixelFox Avatar Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros" data-aos="fade-up">
+            <div class="container logros-grid">
+                <div class="logro-card">
+                    <div class="logro-icon">🎮</div>
+                    <div class="logro-num">4</div>
+                    <div class="logro-label">Proyectos Desarrollados</div>
+                </div>
+                <div class="logro-card">
+                    <div class="logro-icon">🧠</div>
+                    <div class="logro-num">5+</div>
+                    <div class="logro-label">Años de Experiencia</div>
+                </div>
+                <div class="logro-card">
+                    <div class="logro-icon">👥</div>
+                    <div class="logro-num">2K+</div>
+                    <div class="logro-label">Comunidad Digital</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <div class="container portafolio-grid">
+                <div class="portafolio-texto" data-aos="fade-right">
+                    <span class="section-badge">Estudio Indie</span>
+                    <h2>PixelFox Studios</h2>
+                    <p class="studio-desc">
+                        <strong>PixelFox Studios</strong> es una iniciativa dedicada a la conceptualización y desarrollo de videojuegos independientes. Nos enfocamos en construir experiencias memorables que fusionen la estética retro del <strong>pixel art</strong> con narrativas maduras y de alto impacto emocional.
+                    </p>
+
+                    <div class="proyectos-lista">
+                        <h3>📁 Pipeline de Producción</h3>
+                        <div class="proyecto-item">
+                            <h4>🦊 LUNAVOW</h4>
+                            <p>Aventura narrativa y pixel art enfocada en la exploración de las etapas del duelo.</p>
+                        </div>
+                        <div class="proyecto-item">
+                            <h4>🦉 ???</h4>
+                            <p>Por descubrir.</p>
+                        </div>
+                        <div class="proyecto-item">
+                            <h4>🛸 Stellar Overdrive</h4>
+                            <p>Shooter espacial frenético inspirado en los clásicos arcade de los 80 y con mecánica de cartas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-imagen" data-aos="zoom-in-left">
+                    <div class="image-wrapper full-studio-img">
+                        <img src="assets/pixelfox-completo.png" alt="PixelFox Studios Concept Art">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="container">
+                <span class="section-badge" data-aos="fade-up">Stack</span>
+                <h2 data-aos="fade-up">Habilidades Técnicas</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="flip-left">
+                        <h3>C</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        <p class="percent">90%</p>
+                    </div>
+                    <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                        <h3>HTML / CSS</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        <p class="percent">75%</p>
+                    </div>
+                    <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        <p class="percent">60%</p>
+                    </div>
+                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+                        <h3>Pixel Art & Asset Design</h3>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        <p class="percent">85%</p>
+                    </div>
+                </div>
+
+                <div class="tools-section" data-aos="fade-up">
+                    <h3>🛠️ Tecnologías y Entornos de Desarrollo</h3>
+                    <ul class="tools-list">
+                        <li>VSCode</li>
+                        <li>Python</li>
+                        <li>GameMaker</li>
+                        <li>Photoshop</li>
+                        <li>GitHub</li>
+                        <li>Aseprite</li>
+                        <li>Unity</li>
+                        <li>CapCut</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" data-aos="fade-up">
+            <div class="container container-narrow">
+                <span class="section-badge">Ambiente</span>
+                <h2>Soundtrack Creativo</h2>
+                <p>La atmósfera sonora detrás del código y el diseño.</p>
+                <div class="music-player-wrapper">
+                    <iframe src="https://open.spotify.com/embed/playlist/0Vp2nJveEDmyaIsG9qjpAa?utm_source=generator&theme=0" 
+                        width="100%" height="380" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" data-aos="fade-up">
+            <div class="container container-narrow">
+                <span class="section-badge">Networking</span>
+                <h2>Canales Oficiales</h2>
+                <p>Espacios donde comparto el proceso de desarrollo, transmisiones en vivo y comunidad. ¡Conectemos!</p>
+                
+                <div class="social-grid">
+                    <a href="https://github.com/Marquitouh" target="_blank" class="social-btn github">🐈‍⬛ GitHub</a>
+                    <a href="https://x.com/Marquitouh" target="_blank" class="social-btn twitter">🐦 Twitter</a>
+                    <a href="https://www.youtube.com/@Marquitouh" target="_blank" class="social-btn youtube">📺 YouTube</a>
+                    <a href="https://www.twitch.tv/marquitouh" target="_blank" class="social-btn twitch">🎮 Twitch</a>
+                    <a href="https://www.instagram.com/whoismarquitouh/" target="_blank" class="social-btn instagram">📷 Instagram</a>
+                    <a href="https://discord.gg/GZD8mXVQ4Q" target="_blank" class="social-btn discord">💬 Discord</a>
+                    <a href="https://x.com/i/communities/1973164604982206801" target="_blank" class="social-btn community">🌐 Comunidad X</a>
+                    <a href="https://whatsapp.com/channel/0029VaAYKF5GOj9hlkTnxH1c" target="_blank" class="social-btn whatsapp">📱 WhatsApp Channel</a>
+                    <a href="https://open.spotify.com/user/marcogamer721" target="_blank" class="social-btn spotify">🎶 Spotify Profile</a>
+                </div>
+
+                <div class="cta-box" data-aos="zoom-in">
+                    <h3>🚀 ¿Buscás un Desarrollador o Co-diseñador?</h3>
+                    <p>Estoy disponible para colaboraciones en proyectos de software y videojuegos indie.</p>
+                    <a href="mailto: marcomartinezmatia200@gmail.com" class="btn-primary">Iniciar Conversación</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Marquitouh. Todos los derechos reservados.</p>
+            <p class="footer-subtext">Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialización de Animaciones Scroll con mejor performance
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+
+        // Lógica de alternancia de tema (Claro / Oscuro) con guardado en localStorage
+        const toggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            toggle.textContent = isLight ? '☀️' : '🌙';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script>
+</body>
+</html>
