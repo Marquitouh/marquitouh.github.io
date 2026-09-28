@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marquitouh | Software Developer &amp; Game Designer</title>
+<meta name="description" content="Creador de PixelFox Studios e integrador de experiencias interactivas.">
+<meta name="theme-color" content="#F7F6F3">
+
+<!-- Tema antes de pintar: evita el parpadeo al recargar -->
+<script>
+  (function () {
+    var r = document.documentElement;
+    try { r.setAttribute('data-theme', localStorage.getItem('mq.theme') || 'light'); } catch (e) {}
+    r.classList.add('is-booting');
+    // Red de seguridad: si core.js no llegara a cargar, la pagina no puede
+    // quedar bloqueada sin scroll.
+    setTimeout(function () { r.classList.remove('is-booting'); }, 6000);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Space+Grotesk:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/ui.css">
+<link rel="icon" type="image/png" href="assets/pixelfox-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marquitouh | Software Developer &amp; Game Designer">
+<meta property="og:description" content="Creador de PixelFox Studios e integrador de experiencias interactivas.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://marquitouh.github.io/assets/og-marquitouh.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marquitouh — Software Developer &amp; Game Designer">
+<meta name="twitter:image" content="https://marquitouh.github.io/assets/og-marquitouh.png">
+<meta name="twitter:image:alt" content="Marquitouh — Software Developer &amp; Game Designer">
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progbar"><div class="progbar__fill"></div></div>
+
+<header class="hdr">
+  <div class="hdr__in">
+    <a href="index.html" class="brand"><span class="brand__dot"></span>Marquitouh</a>
+
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mí &amp; Hobbies</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+
+    <div class="hdr__ctl">
+      <button class="ctl ctl--theme" type="button" data-theme-toggle aria-label="Cambiar modo de color" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/>
+        </svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 14.4A8.4 8.4 0 1 1 9.6 4a6.9 6.9 0 0 0 10.4 10.4z"/>
+        </svg>
+      </button>
+      <button class="ctl burger" type="button" data-burger aria-label="Menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ═══════════════ 01 · PORTADA ═══════════════ -->
+<section class="hero" id="inicio">
+  <div class="shell hero__in">
+
+    <div class="hero__top">
+      <span class="tag" data-reveal="fade">01 · Portada / Index</span>
+      <span class="hero__stamp" aria-hidden="true">02 <b>N° 01</b></span>
+    </div>
+
+    <div class="hero__frame">
+      <span class="hero__orb" aria-hidden="true"></span>
+      <span class="vtext hero__vtext" data-reveal="fade" aria-hidden="true">式波狐</span>
+
+      <div class="cropbox">
+        <h1 class="hero__logo" aria-label="Marquitouh"></h1>
+      </div>
+
+      <div class="dim dim--h" aria-hidden="true"><i></i><span>1696 PX</span><i></i></div>
+      <div class="dim dim--v" aria-hidden="true"><i></i><span>213 PX</span><i></i></div>
+    </div>
+
+    <h2 class="hero__role" data-reveal="up" data-rv-d="120">
+      Desarrollador de Software <em>&amp;</em> Game Designer
+    </h2>
+
+    <p class="hero__sub lead" data-reveal="up" data-rv-d="200">
+      Creador de PixelFox Studios e integrador de experiencias interactivas.
+    </p>
+
+    <div class="hero__status" data-reveal="up" data-rv-d="280">
+      <span class="dot" id="lanyard-dot"></span>
+      <span id="lanyard-text">Conectando estado…</span>
+    </div>
+
+    <div class="hero__cta" data-reveal="up" data-rv-d="360">
+      <a href="#portafolio" class="btn btn--red"><span class="btn__n">03</span> Ver Proyectos</a>
+      <a href="sobre-mi.html" class="btn">Conocer mis hobbies</a>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><span>Desplazar</span><i></i></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 02 · SOBRE MÍ ═══════════════ -->
+<section class="sec" id="sobre-mi">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">02</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Biografía</span>
+        <h2 data-reveal="line">Sobre mí</h2>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">概要</span>
+    </div>
+
+    <div class="hatch hatch--short" style="margin-bottom:clamp(28px,4vw,48px)"></div>
+
+    <div class="grid-2">
+      <div data-reveal="up">
+        <p class="lead" style="font-size:clamp(1.05rem,.6vw+1rem,1.35rem); color:var(--ink)">
+          Mi nombre es <strong>Marco</strong>, conocido digitalmente como
+          <strong style="color:var(--red)">Marquitouh</strong>.
+        </p>
+        <p class="lead" style="margin-top:20px">
+          Apasionado por el desarrollo de software y la creación de mundos virtuales
+          mediante código y arte pixelado. Construyo sistemas que se sienten bien de
+          usar, no solo que funcionan.
+        </p>
+        <div style="margin-top:30px">
+          <a href="sobre-mi.html" class="btn"><span class="btn__n">04</span> Explorar juegos, animes y setup</a>
+        </div>
+      </div>
+
+      <figure class="panel panel--marks" data-reveal="up" data-rv-d="120">
+        <div class="card__img card__img--tall">
+          <img src="assets/pixelfox-completo.png" alt="PixelFox Studios, arte conceptual" loading="lazy" decoding="async">
+          <span class="badge badge--red badge--l">PixelFox</span>
+        </div>
+        <figcaption class="card__b">
+          <span class="tag">Concepto</span>
+          <p class="card__d" style="margin-top:10px">
+            Identidad visual y arte conceptual del universo PixelFox Studios.
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 03 · LOGROS ═══════════════ -->
+<section class="sec sec--tight sec--sunk" id="logros">
+  <div class="shell">
+    <div class="stats" data-reveal="up">
+      <div class="stat">
+        <span class="stat__n" data-count="4">4</span>
+        <span class="stat__l">Proyectos desarrollados</span>
+      </div>
+      <div class="stat">
+        <span class="stat__n" data-count="5" data-count-suf="+">5+</span>
+        <span class="stat__l">Años de experiencia</span>
+      </div>
+      <div class="stat">
+        <span class="stat__n" data-count="2" data-count-suf="K+">2K+</span>
+        <span class="stat__l">Comunidad digital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 04 · PORTAFOLIO ═══════════════ -->
+<section class="sec" id="portafolio">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">04</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Estudio indie</span>
+        <h2 data-reveal="line">PixelFox Studios</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Iniciativa dedicada a la conceptualización y desarrollo de videojuegos
+          independientes en <strong>pixel art</strong> con un fuerte componente emocional.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">作品</span>
+    </div>
+
+    <div class="filters" data-filtro-proyectos data-reveal="fade" style="margin-bottom:clamp(22px,3vw,34px)">
+      <button type="button" class="is-on" data-cat="all">Todos <b>04</b></button>
+      <button type="button" data-cat="game">Videojuegos <b>03</b></button>
+      <button type="button" data-cat="soft">Software <b>01</b></button>
+    </div>
+
+    <div style="position:relative">
+      <span class="vtext lista-vtext" aria-hidden="true">作品一覧</span>
+      <div class="proy">
+      <article class="proy__item" data-proyecto data-cat="game" data-reveal="up" data-fondo="assets/csm.png">
+        <span class="proy__n">01</span>
+        <span class="proy__b">
+          <h4>LUNAVOW <span class="proy__cat">Videojuego</span></h4>
+          <p>Aventura narrativa centrada en la exploración de las etapas del duelo.</p>
+        </span>
+      </article>
+
+      <article class="proy__item" data-proyecto data-cat="game" data-reveal="up" data-rv-d="80" data-fondo="assets/csm.png">
+        <span class="proy__n">02</span>
+        <span class="proy__b">
+          <h4>??? <span class="proy__cat">Videojuego · Confidencial</span></h4>
+          <p>Proyecto confidencial en desarrollo.</p>
+        </span>
+      </article>
+
+      <article class="proy__item" data-proyecto data-cat="game" data-reveal="up" data-rv-d="160" data-fondo="assets/csm.png">
+        <span class="proy__n">03</span>
+        <span class="proy__b">
+          <h4>Stellar Overdrive <span class="proy__cat">Videojuego</span></h4>
+          <p>Shooter espacial frenético con mecánica de cartas.</p>
+        </span>
+      </article>
+
+      <article class="proy__item" data-proyecto data-cat="soft" data-reveal="up" data-rv-d="240" data-fondo="assets/pixelfox-completo.png">
+        <span class="proy__n">04</span>
+        <span class="proy__b">
+          <h4>Personal Local Assistant <span class="proy__cat">Software</span></h4>
+          <p>Integración de asistentes inteligentes personalizados para entornos de desarrollo.</p>
+        </span>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 05 · HABILIDADES ═══════════════ -->
+<section class="sec sec--sunk" id="habilidades">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">05</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Stack</span>
+        <h2 data-reveal="line">Habilidades técnicas</h2>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">技術</span>
+    </div>
+
+    <div class="skills">
+      <div class="skill" data-reveal="up">
+        <span class="skill__k">C</span>
+        <span class="skill__track"><i class="skill__fill" style="--p:90%"></i></span>
+        <span class="skill__p">90%</span>
+      </div>
+      <div class="skill" data-reveal="up" data-rv-d="90">
+        <span class="skill__k">HTML / CSS</span>
+        <span class="skill__track"><i class="skill__fill" style="--p:75%"></i></span>
+        <span class="skill__p">75%</span>
+      </div>
+      <div class="skill" data-reveal="up" data-rv-d="180">
+        <span class="skill__k">JavaScript</span>
+        <span class="skill__track"><i class="skill__fill" style="--p:60%"></i></span>
+        <span class="skill__p">60%</span>
+      </div>
+      <div class="skill" data-reveal="up" data-rv-d="270">
+        <span class="skill__k">Pixel Art &amp; Assets</span>
+        <span class="skill__track"><i class="skill__fill" style="--p:85%"></i></span>
+        <span class="skill__p">85%</span>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(30px,4vw,48px)">
+      <span class="tag" data-reveal="fade" style="margin-bottom:16px">Herramientas</span>
+      <div class="chips" data-reveal="up">
+        <span class="chip">VSCode</span>
+        <span class="chip">Python</span>
+        <span class="chip">GameMaker</span>
+        <span class="chip">Photoshop</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Aseprite</span>
+        <span class="chip">Unity</span>
+        <span class="chip">CapCut</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 06 · FAQ ═══════════════ -->
+<section class="sec" id="faq">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">06</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Respuestas rápidas</span>
+        <h2 data-reveal="line">Preguntas frecuentes</h2>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">問答</span>
+    </div>
+
+    <div class="faq" data-reveal="up">
+      <div class="faq__i" data-faq>
+        <button class="faq__q" type="button" data-faq-q>
+          <span class="faq__n">01</span>
+          <span>¿Qué herramientas usás para crear pixel art?</span>
+          <span class="faq__sign"></span>
+        </button>
+        <div class="faq__a" data-faq-a><p>Mi herramienta principal es Aseprite para animaciones y sprites retro, combinada con Photoshop para retoques e iluminación.</p></div>
+      </div>
+
+      <div class="faq__i" data-faq>
+        <button class="faq__q" type="button" data-faq-q>
+          <span class="faq__n">02</span>
+          <span>¿En qué motores desarrollás tus videojuegos?</span>
+          <span class="faq__sign"></span>
+        </button>
+        <div class="faq__a" data-faq-a><p>Utilizo principalmente GameMaker Studio para experiencias 2D ágiles y Unity para proyectos con mecánicas complejas.</p></div>
+      </div>
+
+      <div class="faq__i" data-faq>
+        <button class="faq__q" type="button" data-faq-q>
+          <span class="faq__n">03</span>
+          <span>¿Cómo puedo colaborar o trabajar con vos?</span>
+          <span class="faq__sign"></span>
+        </button>
+        <div class="faq__a" data-faq-a><p>Podés enviarme un correo directo desde la sección de contacto o escribirme por Discord. Respondo siempre que pueda.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 07 · CANALES ═══════════════ -->
+<section class="sec sec--sunk" id="contacto">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">07</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Networking</span>
+        <h2 data-reveal="line">Canales oficiales</h2>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">連絡</span>
+    </div>
+
+    <div class="socials">
+      <a class="social" href="https://github.com/Marquitouh" target="_blank" rel="noopener" data-reveal="up">
+        <span class="social__k">GitHub</span><span class="social__u">/Marquitouh</span>
+      </a>
+      <a class="social" href="https://x.com/Marquitouh" target="_blank" rel="noopener" data-reveal="up" data-rv-d="60">
+        <span class="social__k">Twitter / X</span><span class="social__u">@Marquitouh</span>
+      </a>
+      <a class="social" href="https://www.youtube.com/@Marquitouh" target="_blank" rel="noopener" data-reveal="up" data-rv-d="120">
+        <span class="social__k">YouTube</span><span class="social__u">@Marquitouh</span>
+      </a>
+      <a class="social" href="https://www.twitch.tv/marquitouh" target="_blank" rel="noopener" data-reveal="up" data-rv-d="180">
+        <span class="social__k">Twitch</span><span class="social__u">marquitouh</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/whoismarquitouh/" target="_blank" rel="noopener" data-reveal="up" data-rv-d="240">
+        <span class="social__k">Instagram</span><span class="social__u">@whoismarquitouh</span>
+      </a>
+      <a class="social" href="https://discord.gg/GZD8mXVQ4Q" target="_blank" rel="noopener" data-reveal="up" data-rv-d="300">
+        <span class="social__k">Discord</span><span class="social__u">discord.gg/GZD8mXVQ4Q</span>
+      </a>
+    </div>
+
+    <div class="cta" style="margin-top:clamp(24px,3.5vw,40px)" data-reveal="up">
+      <div class="cta__b">
+        <span class="tag">Disponible</span>
+        <h3 style="margin-top:12px">¿Buscás un desarrollador o co-diseñador?</h3>
+        <p>Disponible para colaboraciones en software y videojuegos indie.</p>
+      </div>
+      <a href="mailto:marcomartinezmatia200@gmail.com" class="btn btn--red">
+        <span class="btn__n">07</span> Iniciar conversación
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr__in">
+    <p>© 2026 MARQUITOUH — Todos los derechos reservados</p>
+    <a href="#inicio" class="to-top" data-to-top>
+      Volver arriba
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

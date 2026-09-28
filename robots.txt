@@ -1,0 +1,7 @@
+# robots.txt — Marquitouh
+# https://marquitouh.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://marquitouh.github.io/sitemap.xml
