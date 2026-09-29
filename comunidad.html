@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Culto del Zorro | Servidor Oficial</title>
+<meta name="description" content="Comunidad oficial Furry, Gamer y Social de El Culto del Zorro. ¡Súmate a la manada!">
+  <!-- Iconos: el de PixelFox, en pixel art. Los favicon chicos van con
+       transparencia porque se leen igual sobre barra clara u oscura; el
+       apple-touch va sobre fondo oscuro porque el zorro tiene el hocico
+       blanco y sobre blanco se pierde. -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Marquitouh">
+  <meta name="theme-color" content="#F7F6F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+
+<script>
+  (function () {
+    var r = document.documentElement;
+    try { r.setAttribute('data-theme', localStorage.getItem('mq.theme') || 'light'); } catch (e) {}
+    r.classList.add('is-booting');
+    // Red de seguridad: si core.js no llegara a cargar, la pagina no puede
+    // quedar bloqueada sin scroll.
+    setTimeout(function () { r.classList.remove('is-booting'); }, 6000);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Space+Grotesk:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="assets/css/base.css?v=20260928">
+<link rel="stylesheet" href="assets/css/components.css?v=20260928">
+<link rel="stylesheet" href="assets/css/pages.css?v=20260928">
+<link rel="stylesheet" href="assets/css/ui.css?v=20260928">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Culto del Zorro | Servidor Oficial">
+<meta property="og:description" content="Comunidad oficial Furry, Gamer y Social de El Culto del Zorro. ¡Súmate a la manada!">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://marquitouh.github.io/assets/og-culto.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="El Culto del Zorro — Servidor oficial. Retícula técnica, wordmark y barra de tramas.">
+<meta name="twitter:image" content="https://marquitouh.github.io/assets/og-marquitouh.png">
+<meta name="twitter:image:alt" content="Marquitouh — Software Developer &amp; Game Designer">
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progbar"><div class="progbar__fill"></div></div>
+
+<header class="hdr">
+  <div class="hdr__in">
+    <a href="index.html" class="brand"><span class="brand__dot"></span>Marquitouh</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mí &amp; Hobbies</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="hdr__ctl">
+      <button class="ctl ctl--theme" type="button" data-theme-toggle aria-label="Cambiar modo de color" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/>
+        </svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 14.4A8.4 8.4 0 1 1 9.6 4a6.9 6.9 0 0 0 10.4 10.4z"/>
+        </svg>
+      </button>
+      <button class="ctl burger" type="button" data-burger aria-label="Menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ═══════════════ 01 · SERVIDOR ═══════════════ -->
+<section class="sec pagehead" id="servidor">
+  <div class="shell">
+
+    <article class="server" data-reveal="up">
+      <div class="server__banner" style="background-image:url('assets/culto-de-marquitouh-banner.jpg')"></div>
+      <img class="server__icon" src="assets/culto-de-marquitouh-icon.webp" alt="" width="116" height="116" loading="lazy">
+
+      <div class="server__b">
+        <span class="tag">Servidor oficial</span>
+        <h1>El Culto del Zorro</h1>
+
+        <div class="meta">
+          <span class="meta__i"><i class="dot dot--online" id="dc-dot"></i> <b id="dc-online">—</b> en línea</span>
+          <span class="meta__i"><b id="dc-members">—</b> miembros</span>
+          <span class="meta__i">Est. feb 2021</span>
+        </div>
+
+        <p class="lead" style="margin-top:22px">
+          Comunidad oficial Furry, Gamer y Social. Un espacio libre donde podés
+          compartir tus proyectos, participar en llamadas, jugar y pasarla genial
+          con la manada. <strong>No tenés que ser furry para unirte</strong>, solo
+          tener buena onda.
+        </p>
+
+        <div class="tags">
+          <span>Furry</span>
+          <span>Español</span>
+          <span>Social</span>
+          <span>SFW</span>
+          <span>Gaming</span>
+        </div>
+
+        <div class="server__cta">
+          <a href="https://discord.gg/GZD8mXVQ4Q" target="_blank" rel="noopener" class="btn btn--red">
+            <span class="btn__n">02</span> Entrar al Discord
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 02 · RANGOS ═══════════════ -->
+<section class="sec sec--sunk" id="rangos">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">02</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Comunidad &amp; rango</span>
+        <h2 data-reveal="line">Rangos y jerarquía</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Explorá las distinciones especiales y la progresión de niveles que
+          desbloqueás al participar en la comunidad.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">位階</span>
+    </div>
+
+    <div class="roles" id="roles"></div>
+
+    <h3 style="margin:clamp(34px,4.5vw,54px) 0 20px;font-size:clamp(1.05rem,1.8vw,1.3rem)" data-reveal="up">
+      Jerarquía de niveles de la manada
+    </h3>
+    <div class="chain" id="niveles" data-reveal="up"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 03 · X + CULTCRAFT ═══════════════ -->
+<section class="sec" id="proyectos">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">03</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Más allá de Discord</span>
+        <h2 data-reveal="line">Canales y proyectos</h2>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">支部</span>
+    </div>
+
+    <div class="duo">
+      <article class="destacado" data-reveal="up">
+        <div class="destacado__h">
+          <span class="destacado__i">✦</span>
+          <div>
+            <span class="tag">Espacio en X</span>
+            <h3 style="margin-top:12px;font-size:clamp(1.1rem,2vw,1.35rem)">Comunidad oficial en Twitter / X</h3>
+          </div>
+        </div>
+        <p>Un espacio para compartir memes, fanarts y novedades del Culto.</p>
+        <div style="margin-top:24px">
+          <a href="https://x.com/i/communities/1973164604982206801" target="_blank" rel="noopener" class="btn">
+            <span class="btn__n">04</span> Unirme en X
+          </a>
+        </div>
+      </article>
+
+      <article class="destacado" data-reveal="up" data-rv-d="100">
+        <div class="destacado__h">
+          <span class="destacado__i">▦</span>
+          <div>
+            <span class="tag">Proyecto comunitario</span>
+            <h3 style="margin-top:12px;font-size:clamp(1.1rem,2vw,1.35rem)">CultCraft — Servidor de Minecraft</h3>
+          </div>
+        </div>
+        <p>
+          Estamos construyendo un mundo survival multiplayer exclusivo para los
+          miembros del Culto del Zorro. Conectate en Discord para recibir avisos
+          cuando abramos la whitelist.
+        </p>
+        <div style="margin-top:24px">
+          <button type="button" class="copybox" id="mc-ip" data-ip="play.cultcraft.net">
+            <span id="mc-ip-txt">⏳ Próximamente — IP</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 04 · NORMATIVA ═══════════════ -->
+<section class="sec sec--sunk" id="normas">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">04</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Convivencia</span>
+        <h2 data-reveal="line">Normativa del servidor</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Principios generales para garantizar un ambiente seguro y organizado
+          para todos.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">規約</span>
+    </div>
+    <div style="position:relative"><span class="vtext lista-vtext" aria-hidden="true">規約一覧</span><div class="rules" id="rules"></div></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr__in">
+    <p>© 2026 El Culto del Zorro — Hecho con garras y buena onda</p>
+    <a href="index.html" class="to-top" data-to-top>
+      Volver al inicio
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/core.js?v=20260928"></script>
+<script src="assets/js/ui.js?v=20260928"></script>
+<script src="assets/js/data-comunidad.js?v=20260928"></script>
+<script src="assets/js/comunidad.js?v=20260928"></script>
+</body>
+</html>
