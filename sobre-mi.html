@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sobre Mí &amp; Hobbies | Marquitouh</title>
+<meta name="description" content="Juegos de Steam, animes, personajes favoritos, libros, música y especificaciones de mi PC setup.">
+  <!-- Iconos: el de PixelFox, en pixel art. Los favicon chicos van con
+       transparencia porque se leen igual sobre barra clara u oscura; el
+       apple-touch va sobre fondo oscuro porque el zorro tiene el hocico
+       blanco y sobre blanco se pierde. -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Marquitouh">
+  <meta name="theme-color" content="#F7F6F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+
+<script>
+  (function () {
+    var r = document.documentElement;
+    try { r.setAttribute('data-theme', localStorage.getItem('mq.theme') || 'light'); } catch (e) {}
+    r.classList.add('is-booting');
+    // Red de seguridad: si core.js no llegara a cargar, la pagina no puede
+    // quedar bloqueada sin scroll.
+    setTimeout(function () { r.classList.remove('is-booting'); }, 6000);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Space+Grotesk:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/ui.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sobre Mí &amp; Hobbies | Marquitouh">
+<meta property="og:description" content="Juegos de Steam, animes, personajes favoritos, libros, música y especificaciones de mi PC setup.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://marquitouh.github.io/assets/og-hobbies.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sobre Mí &amp; Hobbies — Marquitouh. Retícula técnica, wordmark y barra de tramas.">
+<meta name="twitter:image" content="https://marquitouh.github.io/assets/og-marquitouh.png">
+<meta name="twitter:image:alt" content="Marquitouh — Software Developer &amp; Game Designer">
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progbar"><div class="progbar__fill"></div></div>
+
+<header class="hdr">
+  <div class="hdr__in">
+    <a href="index.html" class="brand"><span class="brand__dot"></span>Marquitouh</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mí &amp; Hobbies</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="hdr__ctl">
+      <button class="ctl ctl--theme" type="button" data-theme-toggle aria-label="Cambiar modo de color" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/>
+        </svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 14.4A8.4 8.4 0 1 1 9.6 4a6.9 6.9 0 0 0 10.4 10.4z"/>
+        </svg>
+      </button>
+      <button class="ctl burger" type="button" data-burger aria-label="Menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- Esta pagina no tiene un bloque visual que sea su titulo (a diferencia del
+     indice, donde el wordmark es el h1). El h1 va oculto para que la jerarquia
+     quede h1 > h2 de seccion > h3 de tarjeta, que es lo que leen los lectores
+     de pantalla. -->
+<h1 class="sr-only">Sobre mí &amp; Hobbies — Marquitouh</h1>
+
+<!-- ═══════════════ 01 · CABECERA ═══════════════ -->
+<section class="sec" style="padding-top:132px">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">01</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Personal</span>
+        <h2 data-reveal="line">Sobre mí</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Más allá del desarrollo de software, me apasionan los mundos inmersivos,
+          el arte retro pixelado, las buenas historias y la música que potencia el
+          proceso creativo.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">個人</span>
+    </div>
+
+    <div class="intereses">
+      <article class="panel panel--marks" data-reveal="up">
+        <span class="intereses__n">01</span>
+        <h3>Gamer &amp; Collector</h3>
+        <p>Interés por experiencias narrativas, roguelikes y desafíos mecánicos.</p>
+      </article>
+      <article class="panel panel--marks" data-reveal="up" data-rv-d="90">
+        <span class="intereses__n">02</span>
+        <h3>Pixel Art &amp; Concept</h3>
+        <p>Diseño conceptual e identidades visuales para el universo PixelFox Studios.</p>
+      </article>
+      <article class="panel panel--marks" data-reveal="up" data-rv-d="180">
+        <span class="intereses__n">03</span>
+        <h3>Influencia sonora</h3>
+        <p>Rock alternativo, indie y punk rock durante todas mis sesiones de trabajo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 02 · CUMPLEAÑOS ═══════════════ -->
+<section class="sec sec--tight">
+  <div class="shell">
+    <div class="destacado" data-reveal="up" style="display:flex;align-items:center;gap:clamp(20px,3.5vw,40px);flex-wrap:wrap">
+      <img src="assets/mc-cake.webp" alt="" width="72" height="72" loading="lazy"
+           style="width:72px;height:72px;object-fit:contain;flex:none">
+      <div style="flex:1;min-width:220px">
+        <span class="tag">Próximo cumpleaños</span>
+        <h3 style="margin-top:12px;font-size:clamp(1.15rem,2.2vw,1.6rem)">Cuenta regresiva · 21 de Julio</h3>
+      </div>
+      <div class="count" id="countdown" style="flex:1 1 320px;min-width:280px">
+        <div class="count__u"><span class="count__n" data-cd="d">00</span><span class="count__l">Días</span></div>
+        <div class="count__u"><span class="count__n" data-cd="h">00</span><span class="count__l">Horas</span></div>
+        <div class="count__u"><span class="count__n" data-cd="m">00</span><span class="count__l">Min</span></div>
+        <div class="count__u"><span class="count__n" data-cd="s">00</span><span class="count__l">Seg</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 03 · STEAM ═══════════════ -->
+<section class="sec sec--sunk" id="steam">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">03</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Gaming</span>
+        <h2 data-reveal="line">Juegos favoritos</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Títulos fundamentales que marcaron mi experiencia como jugador e
+          inspiraron mi visión de desarrollo.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">ゲーム</span>
+    </div>
+
+    <div class="destacado" style="padding:20px 24px;margin-bottom:clamp(20px,3vw,32px)" data-reveal="up">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:14px">
+          <span class="dot dot--online"></span>
+          <div>
+            <h3 style="font-size:1.05rem">Marquitouh en Steam</h3>
+            <span class="mono" style="font-size:9px">steamcommunity.com/id/Marquitouh</span>
+          </div>
+        </div>
+        <a href="https://steamcommunity.com/id/Marquitouh" target="_blank" rel="noopener" class="btn">
+          <span class="btn__n">04</span> Ver perfil
+        </a>
+      </div>
+    </div>
+
+    <div class="cards cards--wide" id="juegos"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 04 · ANIMES ═══════════════ -->
+<section class="sec" id="animes">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">04</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Otaku culture</span>
+        <h2 data-reveal="line">Animes vistos &amp; en emisión</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Lista personal con mi valoración, género y estado.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">アニメ</span>
+    </div>
+
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:clamp(20px,3vw,30px)">
+      <div class="filters" id="f-animes">
+        <button type="button" class="is-on" data-st="all">Todos</button>
+        <button type="button" data-st="visto">Vistos</button>
+        <button type="button" data-st="emision">En emisión</button>
+        <button type="button" data-st="pendiente">Pendientes</button>
+      </div>
+      <div class="field" style="flex:1;min-width:200px;max-width:300px">
+        <input type="search" id="q-animes" placeholder="Buscar anime o género…" aria-label="Buscar anime">
+      </div>
+    </div>
+
+    <div class="cards" id="grid-animes"></div>
+
+    <div style="text-align:center;margin-top:clamp(28px,4vw,42px)" data-reveal="up">
+      <a href="https://myanimelist.net/profile/Marquitouh" target="_blank" rel="noopener" class="btn">
+        <span class="btn__n">05</span> Ver perfil en MyAnimeList
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 05 · MANGAS ═══════════════ -->
+<section class="sec sec--sunk" id="mangas">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">05</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Lecturas</span>
+        <h2 data-reveal="line">Mangas &amp; obras destacadas</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Historias y obras narrativas que influyeron en mi proceso creativo.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">読書</span>
+    </div>
+    <div class="cards cards--wide" id="grid-mangas"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 06 · PERSONAJES ═══════════════ -->
+<section class="sec" id="personajes">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">06</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Favoritos</span>
+        <h2 data-reveal="line">Personajes</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Emblemáticos de anime, manga, indies y videojuegos, agrupados por franquicia.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">人物</span>
+    </div>
+
+    <div class="filters" id="f-personajes" style="margin-bottom:clamp(20px,3vw,30px)"></div>
+
+    <div style="position:relative"><span class="vtext lista-vtext" aria-hidden="true">人物一覧</span><div class="cards cards--chars" id="grid-personajes"></div></div>
+
+    <div style="text-align:center;margin-top:clamp(28px,4vw,42px)" id="wrap-mas">
+      <button type="button" class="btn" id="btn-mas">
+        <span class="btn__n">06</span> <span id="mas-txt">Ver más personajes</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 07 · SPOTIFY ═══════════════ -->
+<section class="sec sec--sunk" id="music">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">07</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Ambiente</span>
+        <h2 data-reveal="line">Mis playlists de Spotify</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Selección musical para programar, diseñar niveles y trabajar.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">音楽</span>
+    </div>
+    <div class="cards cards--wide" id="grid-playlists"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ 08 · SETUP ═══════════════ -->
+<section class="sec" id="setup">
+  <div class="shell">
+    <div class="sec__head">
+      <span class="sec__num" data-reveal="up">08</span>
+      <div class="sec__title">
+        <span class="tag" data-reveal="fade">Battle station</span>
+        <h2 data-reveal="line">Mi PC &amp; setup de trabajo</h2>
+        <p class="lead" data-reveal="fade" data-rv-d="200">
+          Hardware donde cobran vida el código, los juegos y las herramientas de desarrollo.
+        </p>
+      </div>
+      <span class="vtext sec__vtext" data-reveal="fade" data-rv-d="250">機械</span>
+    </div>
+    <div class="grid-2 grid-2--eq" id="grid-setup"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr__in">
+    <p>© 2026 MARQUITOUH — Todos los derechos reservados</p>
+    <a href="index.html" class="to-top" data-to-top>
+      Volver al inicio
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/hobbies.js"></script>
+</body>
+</html>
